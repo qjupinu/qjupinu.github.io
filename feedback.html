@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Feedback | Tic-Tac-Toe</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+	<header>
+		<input type="checkbox" id="menu-toggle" class="menu-toggle">
+		<label for="menu-toggle" class="menu-button">☰</label>
+		<label for="menu-toggle" class="overlay"></label>
+		<nav class="nav-menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="history.html">History</a></li>
+				<li><a href="strategy.html">Strategy</a></li>
+				<li><a href="play.html" class="play-button">Play</a></li>
+				<li><a href="feedback.html">Feedback</a></li>
+			</ul>
+		</nav>
+		<a href="index.html">
+			<img src="media/ttt.svg" alt="Home | Tic-Tac-Toe" class="home-link">
+		</a>
+		<div>
+			<a href="https://www.linkedin.com/in/williamhgates/" target="_blank" class="linkedin-link" aria-label="LinkedIn">
+				<img src="media/linkedin_icon.svg" alt="LinkedIn" class="linkedin-icon">
+			</a>
+		</div>
+	</header>
+
+	<main>
+		<section class="feedback-section">
+			<h1>We Value Your Feedback!</h1>
+			<form action="#" method="POST" class="feedback-form">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" placeholder="Your Name" required>
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" placeholder="Your Email" required>
+				<label for="region">Region</label>
+				<select id="region" name="region" required>
+					<option value="" disabled selected>Select Your Region</option>
+					<option value="africa">Africa</option>
+					<option value="asia">Asia</option>
+					<option value="europe">Europe</option>
+					<option value="north-america">North America</option>
+					<option value="south-america">South America</option>
+					<option value="antarctica">Antarctica</option>
+				</select>
+				<label for="message">Message</label>
+				<textarea id="message" name="message" rows="4" placeholder="Your Feedback..." required></textarea>
+				<button type="submit" class="submit-button">Submit</button>
+			</form>
+		</section>
+	</main>
+
+	<footer><p>© 2024, Calin Tamas</p></footer>
+</body>
+</html>
