@@ -6,7 +6,7 @@
 	<title>Play | Tic-Tac-Toe</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/menu.css">
-	<script type="text/javascript" src="js/play.js" defer></script>
+	<script src="js/play.js" defer></script>
 </head>
 <body>
 	<header>
@@ -34,6 +34,7 @@
 	
 	<main class="play-page">
 		<h1>Play Tic-Tac-Toe</h1>
+		<div class="timer">Player <span id="current-player">X</span>'s Turn: <span id="timer">15</span>s</div>
 		<div class="game-container">
 			<div class="game-board">
 				<div class="cell" data-index="0"></div>
@@ -46,6 +47,13 @@
 				<div class="cell" data-index="7"></div>
 				<div class="cell" data-index="8"></div>
 			</div>
+		</div>
+		<div class="results">
+			<h2>Game Results</h2>
+			<p>X Wins: <span id="x-wins">0</span></p>
+			<p>O Wins: <span id="o-wins">0</span></p>
+			<p>Draws: <span id="draws">0</span></p>
+			<button id="reset-scores">Reset Scores</button>
 		</div>
 	</main>
 	<footer><p>© 2024, Calin Tamas</p></footer>

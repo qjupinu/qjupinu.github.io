@@ -6,6 +6,7 @@
 	<title>Feedback | Tic-Tac-Toe</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/menu.css">
+	<script src="js/feedback.js" defer></script>
 </head>
 <body>
 	<header>
@@ -34,24 +35,38 @@
 	<main>
 		<section class="feedback-section">
 			<h1>We Value Your Feedback!</h1>
-			<form action="#" method="POST" class="feedback-form">
-				<label for="name">Name</label>
-				<input type="text" id="name" name="name" placeholder="Your Name" required>
-				<label for="email">Email</label>
-				<input type="email" id="email" name="email" placeholder="Your Email" required>
-				<label for="region">Region</label>
-				<select id="region" name="region" required>
-					<option value="" disabled selected>Select Your Region</option>
-					<option value="africa">Africa</option>
-					<option value="asia">Asia</option>
-					<option value="europe">Europe</option>
-					<option value="north-america">North America</option>
-					<option value="south-america">South America</option>
-					<option value="antarctica">Antarctica</option>
-				</select>
-				<label for="message">Message</label>
-				<textarea id="message" name="message" rows="4" placeholder="Your Feedback..." required></textarea>
-				<button type="submit" class="submit-button">Submit</button>
+			<form action="#" method="POST" class="feedback-form" id="feedback-form">
+				
+				<div class="form-group">
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" placeholder="Your Name" required>
+					<span class="error" id="name-error"></span>
+				</div>
+				<div class="form-group">
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" placeholder="Your Email" required>
+					<span class="error" id="email-error"></span>
+				</div>
+				<div class="form-group">
+					<label for="region">Region:</label>
+					<select id="region" name="region">
+						<option value="">Select your continent</option>
+						<option value="Africa">Africa</option>
+						<option value="Asia">Asia</option>
+						<option value="Europe">Europe</option>
+						<option value="North America">North America</option>
+						<option value="South America">South America</option>
+						<option value="Australia">Australia</option>
+						<option value="Antarctica">Antarctica</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="message">Message:</label>
+					<textarea id="message" name="message" rows="5" placeholder="Your Feedback..." required></textarea>
+				</div>
+				<button type="submit">Submit</button>
+				
+				
 			</form>
 		</section>
 	</main>
