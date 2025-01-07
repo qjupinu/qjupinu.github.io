@@ -19,6 +19,7 @@ const winningCombos = [
     [0, 4, 8], [2, 4, 6]
 ];
 
+
 function initializeResults() {
     const results = JSON.parse(localStorage.getItem('ticTacToeResults')) || { X: 0, O: 0, Draw: 0 };
     localStorage.setItem('ticTacToeResults', JSON.stringify(results));
@@ -118,9 +119,21 @@ function highlightCell(e) {
     const cell = e.target;
     const computedStyle = getComputedStyle(cell);
     const originalBg = computedStyle.backgroundColor;
-    cell.style.backgroundColor = "lightblue";
+    let color = Math.floor(Math.random() * 5);
+    if (color === 1) {
+        cell.style.backgroundColor = 'lightblue';
+    } else if (color === 2) {
+        cell.style.backgroundColor = 'lightgreen';
+    } else if (color === 3) {
+        cell.style.backgroundColor = 'orange';
+    } else if (color === 4) {
+        cell.style.backgroundColor = 'yellow';
+    } else {
+        cell.style.backgroundColor = 'pink';
+    }
+
     cell.addEventListener('mouseleave', () => {
-        cell.style.backgroundColor = originalBg;
+        cell.style.backgroundColor = "#666";
     }, { once: true });
 }
 

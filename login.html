@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Strategy | Tic-Tac-Toe</title>
+	<title>Login | Tic-Tac-Toe</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/menu.css">
+	<script src="js/login.js" defer></script>
 </head>
 <body>
 	<header>
@@ -32,17 +33,24 @@
 		</div>
 	</header>
 
-	<main class="strategy-page">
-		<section class="strategy">
-			<h2>Strategy</h2>
-			<iframe width="600" height="400"
-				src="https://www.youtube.com/embed/WUX0hB1u0vE">
-			</iframe>
-			<h3>Learn more about strategy <a href="https://en.wikipedia.org/wiki/Tic-tac-toe#Strategy">here</a>.</h3>
+	<main class="login-page">
+		<section id="login-section">
+			<h1>Login</h1>
+			<form id="login-form">
+				<div class="form-group">
+					<label for="username">Username:</label>
+					<input type="text" id="username" name="username" required>
+				</div>
+				<div class="form-group">
+					<label for="password">Password:</label>
+					<input type="password" id="password" name="password" required>
+				</div>
+				<button type="submit">Login</button>
+			</form>
+			<p id="login-message"></p>
 		</section>
-		
 	</main>
-	
+
 	<footer><p>© 2024, Calin Tamas</p></footer>
 </body>
 </html>

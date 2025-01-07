@@ -7,7 +7,6 @@ const emailError = document.getElementById('email-error');
 feedbackForm.addEventListener('submit', function (e) {
   let isValid = true;
 
-  // Validate Name
   const nameValue = nameInput.value.trim();
   if (!/^[a-zA-Z ]+$/.test(nameValue)) {
     isValid = false;
@@ -16,7 +15,6 @@ feedbackForm.addEventListener('submit', function (e) {
     nameError.textContent = '';
   }
 
-  // Validate Email
   const emailValue = emailInput.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue)) {
     isValid = false;

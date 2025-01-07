@@ -95,6 +95,15 @@ footer {
 	text-align: center;
 }
 
+.login-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+	text-align: center;
+}
+
 .strategy-page {
 	display: flex;
 	flex-direction: column;
@@ -197,13 +206,13 @@ footer {
 	opacity: 0.8;
 }
 
-/*test responsivew design other
-@media (max-width: 768 SAU 1024 px) {
-  main {
-    padding: 1rem;
-  }
+/*test responsivew design other*/
+@media (max-width: 768px) {
+	main {
+		padding: 1rem;
+	}
 }
-*/
+
 
 /* Game board styles */
 .game-container {

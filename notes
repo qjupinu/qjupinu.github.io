@@ -1,0 +1,46 @@
+Cerințe generale minimale pentru partea 1 (HTML + CSS):
+
+    OK: fișiere separate pentru HTML și CSS
+    OK: conținutul site-ului trebuie să aibă sens (nu îl umpleți cu Lorem ipsum)
+    OK: nu este acceptată folosirea de frameworkuri și biblioteci
+
+HTML:
+
+    OK: trecerea testelor de validare HTML http://validator.w3.org/
+    OK: folosirea tagurilor semantice prezentate la curs/laborator
+
+CSS:
+
+    OK: trecerea testelor de validare CSS https://jigsaw.w3.org/css-validator/
+    OK: site-ul trebuie să fie responsive (media query, unități relative, tipuri de display)
+    OK: folosirea selectorilor CSS de bază (după id, clasă, tag, elementContinut, elementCopil, al n-lea copil de tipul unui tag :nth-of-type)
+    OK: specificarea proprietăților: width, height, color, background, font-size, border, padding, margin, display etc.
+    OK: folosirea coloanelor pentru layoutul a cel puțin unei pagini; realizarea layoutului fără tabele (folosind flex și grid)
+    OK: site-ul trebuie să conțină un menu drop-down (sau altfel expandabil) realizat cu CSS
+    OK: site-ul trebuie să conțină o tranziție care implică schimbarea mai multor proprietăți la intervale diferite de timp
+    OK (transform): site-ul trebuie să conțină o animație care să modifice mai multe proprietăți ale aceluiași element
+    ! bonus point ! pentru generarea conținutului folosind :after, :before (dar să aibă sens; fiți creativi)
+
+Cerințe generale minimale pentru partea 2 (JavaScript + ajax + misc):
+
+A. JavaScript:
+
+    OK: fișier separat pentru codul JavaScript
+    OK: modificarea stilului unui element sau al unui grup de elemente
+    OK: manipularea DOM-ului (selectare după id, tag, clasă, folosind selectori CSS)
+    OK: crearea și stergerea de elemente HTML
+    OK: folosirea și modificarea evenimentelor generate de mouse si tastatură
+    OK: modificare de proprietăți
+    OK: inputuri funcționale (de exemplu: input de tip text/range/number/radio/checkbox, select, textarea)
+    OK: (timer din play): folosirea setTimeout sau setInterval
+    OK (scoreboard): folosirea localStorage (să se pastreze în localStorage o colecție de elemente)
+    OK (folosit array): folosirea a cel puțin unei metode din clasele: Math, Array, String, Date
+    OK: schimbarea aleatoare a valorilor unei proprietăți (de exemplu: culoare, dimensiuni, poziție)
+    OK (la handle-ul cell-urilor de exemplu, avem add classlist taken etc.): folosirea proprietăților classList, target sau currentTarget
+    OK (schimbarea culorii cell-urilor): folosirea metodelor getComputedStyle, stopPropagation
+    OK (name si email): validarea datelor dintr-un formular folosind expresii regulate
+
+B. AJAX:
+
+    OK (history fun facts): cereri Ajax cu preluare date dintr-un fișier json
+    OK (pagina login aiurea): sesiuni e.g. login/logout (folosind Storage / fișier json)
