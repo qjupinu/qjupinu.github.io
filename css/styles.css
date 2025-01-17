@@ -87,11 +87,11 @@ footer {
 }
 
 .play-page {
-	display: flex;
+	/*display: flex;*/
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 80vh;
+	/*height: 80vh;*/
 	text-align: center;
 }
 
